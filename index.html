@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coolors palette</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Color Scheme Generator</h1>
+        </header>
+    
+        <main>
+        <!-- Color options section  -->
+            <section class="color-option-sec">
+                <input
+                    type="color"
+                    id="seed-color" 
+                    value="#6cf90d">
+                <select 
+                    name="scheme-color"
+                    id="scheme-color">
+                    <option value="analogic">Analogic</option>
+                    <option value="analogic-complement">Analogic-complement</option> 
+                    <option value="complement">Complement</option> 
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="submit-btn" type="submit" >
+                    Get color scheme
+                </button>
+            </section>
+            <section class="color-show-container">
+                <div id="color-container" class="color-container"></div>
+            </section>
+        </main>    
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
